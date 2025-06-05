@@ -50,7 +50,7 @@ app.use(`/api/v1${config.uploadPath}`, express.static(config.uploadFolder));
 app.use("/api/v1", rootRouter);
 
 app.get("/api", (req, res, next) => {
-  res.send("welcome to okobiz");
+  res.send("welcome to Ridoy islam nasim");
 });
 
 app.get("/time", (req, res, next) => {
