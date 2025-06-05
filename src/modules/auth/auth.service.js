@@ -41,7 +41,7 @@ class AuthService extends BaseService {
             throw new Error('Password must be at least 5 characters');
         }
         if (email) {
-            const auth = await this.#repository.getAuthByEmail(email);
+            const auth = await this.#repository.getAuthByEmailSignUp(email);
             if (auth) throw new Error('Email already exists');
         }
         if (phone) {

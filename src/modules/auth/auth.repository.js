@@ -19,7 +19,7 @@ class AuthRepository extends BaseRepository {
     return user;
   }
 
-  async getAuthByEmail(email) {
+  async getAuthByEmailSignUp(email) {
     return await this.#model.findOne({ email }).exec();
   }
   async setUserOTP(id, OTP) {

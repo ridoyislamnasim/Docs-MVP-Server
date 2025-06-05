@@ -5,11 +5,11 @@ const Userschema = new Schema(
   {
      googleId: {
       type: String,
-      unique: true,
+      // unique: true,
     },
     userId: {
       type: String,
-      unique: true,
+      // unique: true,
     },
     name: {
       type: String,
